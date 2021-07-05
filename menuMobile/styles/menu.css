@@ -1,0 +1,35 @@
+.menu{
+    display: block;
+
+    background-image: url(img/icons8-menu.svg);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+
+    padding: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu_close{
+    background-color: tomato;
+    background-position: center center;
+}
+
+.listMenu{
+    transform: translateX(-100%);
+    transition: transform 300ms linear;
+
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+.listMenu.open{
+    transform: translateX(0);
+}
+
+.itemMenu{
+    padding: 20px 15px; 
+    border-bottom: 1px solid rgba(255, 99, 71, 0.5);
+    border-right: 1px solid rgba(255, 99, 71, 0.5);
+}
