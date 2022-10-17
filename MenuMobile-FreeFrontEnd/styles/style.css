@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;  
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    
+    background: gainsboro;
+}
+
+
+/*Botão para abrir menu*/
+#btnMenu{ 
+    height: 45px;
+    width: 150px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+
+    background: linear-gradient(100deg, #8b1dd1, #2c19cd);
+    color: white;
+
+    cursor: pointer;
+    text-align: center;
+}
+
+#btnMenu:hover{
+    background: #8b1dd1;
+}
+
+.logoMenuButton{
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+
+    margin-right: 15px;
+}
+
+.logoMenuButton img{
+    height: 15px;
+}
+
+.txtMenuButton{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+
+/*menu aberto*/
+.menuMobile{
+   width: 100vw;
+   max-width: 400px;
+
+   position: absolute;
+   display:none;
+
+   background: white;
+   border-radius: 25px 25px 0 0 ;   
+}
+
+.menuMobile.open{
+    display: unset;
+}
+
+.menuMobile img{
+    height: 30px;
+}
+
+#headerMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 20px 10px 20px;
+    border-bottom: 1px solid gainsboro;
+}
+
+#headerMenu p{
+    font-weight: bold;    
+}
+
+#headerMenu span{
+    cursor: pointer;
+}
+
+#mainMenu{
+    display: flex;
+    overflow-x:auto;
+    gap: 25px;
+
+    padding: 15px 20px 20px 20px;
+    border-bottom: 1px solid gainsboro;
+
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+    white-space: nowrap;   
+}
+
+#mainMenu p{
+    cursor: pointer;
+}
+
+#footerMenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 15px 20px 10px 20px;
+    margin-bottom: 15px;
+}
+
+#footerMenu .cardMenu{
+    width: 100px;
+    min-width: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    padding: 10px;
+    background: rgb(241, 240, 240);
+
+    cursor: pointer;
+}
+
+#footerMenu .cardMenu p{
+    font-weight: bold;
+    color: purple;
+    
+}
+
+#footerMenu .cardMenu img{
+    width: 30px;
+}
